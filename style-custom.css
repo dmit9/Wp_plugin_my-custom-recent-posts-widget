@@ -1,0 +1,72 @@
+.custom-recent-post-item {
+    margin: 10px 0;
+}
+
+.post-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.desktop-title {
+    display: block;
+}
+
+.mobile-title {
+    display: none;
+}
+
+
+.rating-panel {
+    display: flex;
+    align-items: center;
+}
+
+.rating-panel.bottom-left {
+    justify-content: flex-start;
+}
+
+.rating-panel.bottom-center {
+    justify-content: center;
+}
+
+.rating-panel.bottom-right {
+    justify-content: flex-end;
+}
+
+.rating-star {
+    display: inline-block;
+    padding: 2px 5px;
+    cursor: pointer;
+    color: #f39c12;
+}
+
+.rating-star:hover {
+    color: #e74c3c;
+}
+
+.rating-panel-wrap {
+    list-style-type: none;
+}
+
+
+
+@media (max-width: 767px) {
+    .custom-recent-post-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .post-title {
+        font-size: 14px;
+    }
+
+    .desktop-title {
+        display: none;
+    }
+
+    .mobile-title {
+        display: block;
+    }
+
+
+}
